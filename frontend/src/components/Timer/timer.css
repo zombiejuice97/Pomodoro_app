@@ -1,0 +1,39 @@
+main{
+    text-align: center;
+    padding-top: 50px;
+    position: relative;
+    margin-top: 200px;
+}
+
+label{
+    margin-top: 50px;
+    display: block;
+}
+
+.slider{
+    height:40px;
+    border: 2px solid red;
+    border-radius: 20px;
+}
+
+.thumb{
+    background-color: red;
+    cursor: pointer;
+    width:20px;
+    height:40px;
+    border-radius: 20px;
+}
+
+.slider.green{
+    height:40px;
+    border: 2px solid green;
+    border-radius: 20px;
+}
+
+.thumb.green{
+    background-color: green;
+    cursor: pointer;
+    width:20px;
+    height:40px;
+    border-radius: 20px;
+}
