@@ -16,7 +16,7 @@ function Tasks({ todo, deleteTodo, bringToForm, timerHandler }) {
                     <br />
                     <button onClick={() => deleteTodo(todo._id)}>Delete</button>
                     <button onClick={() => bringToForm(todo)}>Edit</button>
-                    <button onClick={() => timerHandler()}>Timer</button>
+                    <button onClick={() => timerHandler(todo.name)}>Timer</button>
                 </div>
             </div>
         </div>

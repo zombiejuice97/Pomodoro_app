@@ -4,7 +4,7 @@ const dotenv = require('dotenv');
 const todoRoutes = require("../backend/routes/todoRoutes");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-dotenv.config({ path: '../.env' }); // Here you must take care to provide the correct path of the .env file
+dotenv.config({ path: "./.env" }); // Here you must take care to provide the correct path of the .env file
 
 const app = express();
 app.use(express.json());

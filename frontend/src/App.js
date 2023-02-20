@@ -21,7 +21,8 @@ function App() {
     const [taskId, setTaskId] = useState("");
     // const [timerState,setTimerState] = useState(false)
     const [timerOn,setTimerOn] = useState(false)
-    
+    const [timerName,setTimerName] = useState("")
+
     let createTask = async (e) => {
         e.preventDefault();
         try {
@@ -34,8 +35,9 @@ function App() {
         return
     }
 
-    function timerHandler(){
-        timerOn===false? setTimerOn(true) : setTimerOn(false)
+    function timerHandler(name){
+        timerOn===false? setTimerOn(true) : setTimerOn(false);
+        setTimerName(name);
     }
 
     function handleChange(e) {
@@ -97,7 +99,7 @@ function App() {
             <div className="container">
                 <Header />
                 <Form handleChange={handleChange} createTask={createTask} name={name} isEditing={isEditing} updateTask={updateTask} />
-                {timerOn?<Timer timerHandler={timerHandler}/> : render_todo()}
+                {timerOn?<Timer name={timerName} timerHandler={timerHandler}/> : render_todo()}
                 {/* {todos.map((todo, index) => <Tasks key={todo._id} todo={todo} index={index} deleteTodo={deleteTodo} bringToForm={bringToForm}/>)} */}
             </div>
         </div>
