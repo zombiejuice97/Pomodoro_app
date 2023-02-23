@@ -6,7 +6,8 @@ main{
 }
 
 label{
-    margin-top: 50px;
+    color: aliceblue;
+    margin-top: 20px;
     display: block;
 }
 
@@ -37,4 +38,10 @@ label{
     width:20px;
     height:40px;
     border-radius: 20px;
+}
+
+.back{
+    position: fixed;
+    bottom:-100;
+    right:700px;
 }
