@@ -53,7 +53,7 @@ function Timer({ timerHandler, name }) {
       if (isPausedRef.current) {
         return
       }
-      if (secondsLeftRef.current == 0) {
+      if (secondsLeftRef.current === 0) {
         isPausedRef.current = true;
         ring();
         switchMode();

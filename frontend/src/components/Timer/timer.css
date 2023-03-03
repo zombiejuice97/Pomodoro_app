@@ -40,8 +40,15 @@ label{
     border-radius: 20px;
 }
 
+button{
+    width:70px;
+    margin-top:10px;
+}
+
 .back{
     position: fixed;
-    bottom:-100;
-    right:700px;
+    /* bottom:-50; */
+    right:600px;
+    top:530px;  
+    width:70px;
 }
